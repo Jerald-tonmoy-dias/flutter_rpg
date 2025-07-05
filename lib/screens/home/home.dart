@@ -14,7 +14,12 @@ class _HomeState extends State<Home> {
       appBar: AppBar(title: const Text('Your Character'), centerTitle: true),
       body: Container(
         padding: const EdgeInsets.all(16),
-        child: const Text("Home"),
+        child: Column(
+          children: [
+            const Text("Character List"),
+            FilledButton(onPressed: () {}, child: Text('Create New')),
+          ],
+        ),
       ),
     );
   }
