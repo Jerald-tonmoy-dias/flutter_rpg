@@ -26,6 +26,7 @@ ThemeData primaryTheme = ThemeData(
     centerTitle: true,
   ),
 
+  // text theme
   textTheme: TextTheme().copyWith(
     bodyMedium: TextStyle(
       color: AppColors.textColor,
@@ -44,5 +45,15 @@ ThemeData primaryTheme = ThemeData(
       letterSpacing: 2,
       fontWeight: FontWeight.bold,
     ),
+  ),
+
+  // card theme
+  // cardTheme: CardTheme(color: AppColors.secondaryColor),
+  cardTheme: CardThemeData(
+    color: AppColors.secondaryColor.withOpacity(0.5),
+    surfaceTintColor: Colors.transparent,
+    shape: const RoundedRectangleBorder(),
+    shadowColor: Colors.transparent,
+    margin: const EdgeInsets.only(bottom: 16),
   ),
 );
