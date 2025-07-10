@@ -31,14 +31,14 @@ enum Vocation {
   const Vocation({
     required this.title,
     required this.description,
-    required this.image,
     required this.weapon,
     required this.ability,
+    required this.image,
   });
 
   final String title;
   final String description;
-  final String image;
   final String weapon;
   final String ability;
+  final String image;
 }
